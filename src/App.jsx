@@ -34,7 +34,7 @@ const AppContent = () => {
 
 const App = () => {
   return (
-    <BrowserRouter basename='/Networth-Tracker'>
+    <BrowserRouter basename='/'>
       <AppContent />
     </BrowserRouter>
   );
