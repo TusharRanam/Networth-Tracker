@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Insights from "./pages/Insights";
@@ -34,9 +34,9 @@ const AppContent = () => {
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename='Networth-Tracker'>
       <AppContent />
-    </Router>
+    </BrowserRouter>
   );
 };
 
