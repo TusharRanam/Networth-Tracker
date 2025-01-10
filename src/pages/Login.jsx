@@ -12,7 +12,6 @@ const Login = () => {
   
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 sm:px-8">
-      {/* Logo */}
       <div className="mb-8 text-center">
         {/* logo */}
         <h1 className="text-blue-800 font-bold text-xl sm:text-2xl mt-2">
@@ -41,7 +40,7 @@ const Login = () => {
        
       </div>
 
-      {/* Form */}
+     
       <form onSubmit={handlesubmit} className="w-full max-w-sm">
         <div className="mb-4">
           <label

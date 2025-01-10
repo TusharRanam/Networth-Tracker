@@ -14,22 +14,22 @@ import { BsGraphUp } from "react-icons/bs";
 import AssetsSection from "../components/AssetsSection";
 import TransactionsSection from "../components/TransactionsSection";
 
-// Register Chart.js components
+
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const Dashboard = () => {
-  // Graph data and configuration
+  
   const graphData = {
     labels: ["2019", "2020", "2021", "2022", "2023", "2024"],
     datasets: [
       {
         label: "Networth",
         data: [15000000, 1000000, 25000000, 18000000, 20000000, 25000000],
-        borderColor: "rgba(59, 130, 246, 1)", // Blue line
-        backgroundColor: "rgba(59, 130, 246, 0.2)", // Light blue fill
+        borderColor: "rgba(59, 130, 246, 1)", 
+        backgroundColor: "rgba(59, 130, 246, 0.2)", 
         borderWidth: 2,
-        tension: 0.4, // Smooth curve
-        pointRadius: 3, // Dots on the graph
+        tension: 0.4, 
+        pointRadius: 3,
       },
     ],
   };
@@ -39,10 +39,10 @@ const Dashboard = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false, // Hide legend for simplicity
+        display: false, 
       },
       tooltip: {
-        enabled: true, // Enable tooltips
+        enabled: true, 
       },
     },
     scales: {
@@ -67,7 +67,7 @@ const Dashboard = () => {
             weight: "bold",
           },
         },
-        beginAtZero: true, // Ensure the Y-axis starts at 0
+        beginAtZero: true, 
       },
     },
   };
